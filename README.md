@@ -19,23 +19,17 @@ The dataset contains 20,765 entries and 22 features, including:
 
 #### EDA (Exploratory Data Analysis)
 1. Room type distribution:
-
-Visualized the count of each room type using bar plots.
-Identified Entire home/apt as the most common room type.
-Neighborhood group insights:
-
-2. Analyzed price variations by boroughs.
-Manhattan had the highest average prices.
-Availability trends:
-
-3. Used heatmaps to show correlations among price, availability_365, number_of_reviews, and beds.
-Price distribution:
-
-Used histograms to show the distribution of prices.
-Majority of the listings were priced between $50 - $300.
+   Visualized the count of each room type using bar plots.
+   Identified Entire home/apt as the most common room type.
+2. Neighborhood group insights:
+   Analyzed price variations by boroughs.
+   Manhattan had the highest average prices.
+3. Availability trends:
+   Used heatmaps to show correlations among price, availability_365, number_of_reviews, and beds.
+4. Price distribution:
+   Used histograms to show the distribution of prices.
+   Majority of the listings were priced between $50 - $300.
 4. Host listings:
-
-5. Analyzed hosts with multiple listings using boxplots to identify key contributors.
-Review behavior:
-
-Used pair plots to show relationships between number of reviews, price, and availability.
+   Analyzed hosts with multiple listings using boxplots to identify key contributors.
+5. Review behavior:
+   Used pair plots to show relationships between number of reviews, price, and availability.
