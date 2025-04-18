@@ -46,17 +46,20 @@ The dataset contains 20,765 entries and 22 features, including:
 
 ## Insights and Observations
 
-*(Add specific observations you drew from the graphs here. For example:)*
-
-*  High-priced listings appear to be concentrated in specific neighborhoods.
-*  The number of reviews does not seem to have a strong positive correlation with price, suggesting other factors could be more influential.
-*  Certain room types are prevalent in specific areas.
-*  Understanding correlations through the heatmap might suggest further data analysis around which variables have a major impact on pricing.
+1. Price Trends:
+   Manhattan has the most expensive listings, followed by Brooklyn.
+   Entire homes/apartments cost significantly more than private or shared rooms.
+2. Room Type Distribution:
+   Entire homes/apartments are the most common, but private rooms offer budget-friendly options.
+3. Outliers in Price:
+   Few listings priced at $10,000+ were detected, indicating the need to filter such extreme values.
+4. Availability Patterns:
+   Listings with high availability tend to have lower prices and more reviews, likely due to better guest experience.
+5. Host Behavior:
+   Some hosts manage multiple listings, indicating a trend toward professional hosting.
 
 
 ## Further Exploration
-
-*(Suggest potential next steps, like additional visualizations, advanced analysis methods or more in-depth exploration into specific insights)*
 
 * Model building (predicting price, occupancy, etc.).
 * Time series analysis of pricing and availability.
