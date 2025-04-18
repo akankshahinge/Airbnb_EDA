@@ -17,19 +17,47 @@ The dataset contains 20,765 entries and 22 features, including:
 - reviews_per_month: Average monthly reviews for the listing
 - availability_365: Number of available days in the year
 
-#### EDA (Exploratory Data Analysis)
-1. Room type distribution:
-   Visualized the count of each room type using bar plots.
-   Identified Entire home/apt as the most common room type.
-2. Neighborhood group insights:
-   Analyzed price variations by boroughs.
-   Manhattan had the highest average prices.
-3. Availability trends:
-   Used heatmaps to show correlations among price, availability_365, number_of_reviews, and beds.
-4. Price distribution:
-   Used histograms to show the distribution of prices.
-   Majority of the listings were priced between $50 - $300.
-4. Host listings:
-   Analyzed hosts with multiple listings using boxplots to identify key contributors.
-5. Review behavior:
-   Used pair plots to show relationships between number of reviews, price, and availability.
+## Exploratory Data Analysis (EDA)
+
+### Univariate Analysis
+
+* **Price Distribution:** A boxplot and a histogram were created to visualize the distribution of prices, revealing outliers and the overall price range.  Outliers above 1500 were removed for a clearer price distribution.  The histogram shows the frequency of different price ranges.
+* **Availability Distribution:**  A histogram illustrates the distribution of listing availabilities throughout the year.
+
+### Bivariate Analysis
+
+* **Average Price by Neighbourhood Group:** Analyzed the average price of listings across different neighbourhood groups.
+* **Price per Bed:** Calculated the average price per bed for each neighborhood group, providing insights into value per bed.
+* **Price Dependency on Neighbourhood and Room Type:** A barplot visualizes how prices vary across different neighborhoods and room types.
+* **Price vs. Number of Reviews:** A scatter plot explores the relationship between price and the number of reviews, colored by neighborhood group, revealing potential correlations.
+
+### Multivariate Analysis
+
+* **Pair Plot:** A pair plot showcases the pairwise relationships between key variables (price, minimum nights, number of reviews, reviews per month, availability) colored by room type. This helps visualize correlations and potential interactions.
+
+### Geographical Distribution
+
+* **Airbnb Listing Locations:** A scatter plot displays the geographical distribution of Airbnb listings on a map. This helps visualize listing density in different areas.
+
+### Correlation Analysis
+
+* **Heatmap:** A heatmap illustrates the correlation matrix for several key numerical features, providing a visual representation of the relationships between these variables (latitude, longitude, price, minimum nights, number of reviews, reviews per month, availability_365, and beds).
+
+
+## Insights and Observations
+
+*(Add specific observations you drew from the graphs here. For example:)*
+
+*  High-priced listings appear to be concentrated in specific neighborhoods.
+*  The number of reviews does not seem to have a strong positive correlation with price, suggesting other factors could be more influential.
+*  Certain room types are prevalent in specific areas.
+*  Understanding correlations through the heatmap might suggest further data analysis around which variables have a major impact on pricing.
+
+
+## Further Exploration
+
+*(Suggest potential next steps, like additional visualizations, advanced analysis methods or more in-depth exploration into specific insights)*
+
+* Model building (predicting price, occupancy, etc.).
+* Time series analysis of pricing and availability.
+* Deeper dive into specific neighborhoods or room types.
